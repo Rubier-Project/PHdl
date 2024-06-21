@@ -1,4 +1,5 @@
 import os
+import sys
 
 os.system("")
 
@@ -23,7 +24,6 @@ try:
 except:
     exit(1)
 import time
-import sys
 import threading
 
 commands: dict = {}
