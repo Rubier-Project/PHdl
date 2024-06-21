@@ -12,13 +12,6 @@ if not os.path.exists("PHUB") or not os.path.exists("../PHUB"):
     print("python downloader.py -h")
     os.remove(sys.argv[0])
 
-if not os.path.isdir("../PHUB"):
-    os.system("git clone https://github.com/EchterAlsFake/PHUB")
-    print()
-    print("Please Write this commands to use downloader: ")
-    print("cd PHUB")
-    print("python downloader.py -h")
-    os.remove(sys.argv[0])
 try:
     from src.phub import Client
     from src.phub import Quality
