@@ -12,7 +12,7 @@ if not os.path.exists("PHUB") or not os.path.exists("../PHUB"):
     print("python downloader.py -h")
     os.remove(sys.argv[0])
 
-if not os.path.isdir("PHUB"):
+if not os.path.isdir("../PHUB"):
     os.system("git clone https://github.com/EchterAlsFake/PHUB")
     os.system(f"cp {sys.argv[0]} PHUB")
     print()
