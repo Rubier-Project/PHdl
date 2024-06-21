@@ -1,9 +1,4 @@
-from src.phub import Client
-from src.phub import Quality
-import time
 import os
-import sys
-import threading
 
 os.system("")
 
@@ -22,6 +17,14 @@ if not os.path.isdir("PHUB"):
     print("cd PHUB")
     print("python downloader.py -h")
     os.remove(sys.argv[0])
+try:
+    from src.phub import Client
+    from src.phub import Quality
+except:
+    exit(1)
+import time
+import sys
+import threading
 
 commands: dict = {}
 
