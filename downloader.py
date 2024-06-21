@@ -14,7 +14,6 @@ if not os.path.exists("PHUB") or not os.path.exists("../PHUB"):
 
 if not os.path.isdir("../PHUB"):
     os.system("git clone https://github.com/EchterAlsFake/PHUB")
-    os.system(f"cp {sys.argv[0]} PHUB")
     print()
     print("Please Write this commands to use downloader: ")
     print("cd PHUB")
